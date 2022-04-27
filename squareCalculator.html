@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SQURECALCULATOR</title>
+    <script src="squareCalculator.js" defer></script>
+    <link rel="stylesheet" href="squareCalculator.css" />
+  </head>
+  <body>
+
+<!-- main div of Calculator -->
+
+    <div class="main">
+      <form action="get">
+
+<!-- input feild -->
+
+        <div class="text">
+          <h1>Square Calculator</h1>
+          <hr />
+          <hr />
+          <label for="text"></label>
+          <input type="text" id="input" placeholder="right some num here" />
+          <br /><br />
+
+<!-- result input field -->
+
+          <label for="text"></label>
+          <input
+            type="text"
+            id="output"
+            disabled
+            placeholder="your result is here"
+          />
+        </div>
+        <br /><br />
+
+<!-- calculator buttons -->
+<!-- reset button -->
+
+        <input type="reset" class="btn" />
+       
+ <!-- click button -->
+       
+        <input
+          type="button"
+          value="click"
+          id="btn"
+          onclick="square('click')"
+          class="btn"
+        />
+        <br /><br />
+
+<!-- darkmode button -->
+
+        <input
+          type="button"
+          onclick="darkmode('click2')"
+          value="DARK MODE"
+          class="btn"
+        />
+      </form>
+
+<!-- name showing button -->
+
+    </div>
+    <div class="myname">
+      <button onclick="myfunction()">DEVELOPER NAME</button>
+      <div id="container">
+        <h1>MOHSIN KHAN</h1>
+      </div>
+  </body>
+</html>
+
+                                                    <!-- THATS IT-->
