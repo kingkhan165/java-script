@@ -1,0 +1,68 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 50px;
+  color: pink;
+}
+
+.calc {
+  background-color: rgb(177, 233, 255);
+  border: 3px solid pink;
+  width: 310px;
+  height: 400px;
+  margin-left: 570px;
+}
+
+.text input {
+  border-bottom: 1px solid palevioletred;
+  border-top: 1px solid palevioletred;
+  border-right: 1px solid palevioletred;
+  border-left: 1px solid palevioletred;
+  border-radius: 0 15px;
+  text-align: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.btn input {
+  border: 2px solid pink;
+  border-radius: 5px;
+}
+
+.btn input:hover {
+  transform: scale(0.9);
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.dark {
+  background-color: pink;
+  border: 3px solid rgb(177, 233, 255);
+}
+
+.dark h1 {
+  color: rgb(177, 233, 255);
+}
+
+.dark .text input {
+  border: 1px solid rgb(177, 233, 255);
+}
+
+.dark .btn input {
+  border: 2px solid rgb(177, 233, 255);
+}
+
+.dark .btn input:hover {
+  background-color: rgb(177, 233, 255);
+  border: 1px solid black;
+}

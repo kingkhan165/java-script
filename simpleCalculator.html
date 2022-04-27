@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>simpleCalculator</title>
+    <link rel="stylesheet" href="simpleCalculator.css" />
+    <script src="simpleCalculator.js" defer></script>
+  </head>
+  <body>
+    <!-- Calculator -->
+
+    <form action="get">
+      <!-- Calculator Number input div -->
+
+      <div class="calc">
+        <!-- Calculator heading -->
+
+        <h1>Calculator</h1>
+        <div class="text">
+          <label for="num1"></label>
+          <input
+            type="text"
+            id="num1"
+            name="num1"
+            placeholder="write some Number here"
+          />
+
+          <br /><br />
+
+          <label for="num2"></label>
+          <input
+            type="text"
+            id="num2"
+            name="num2"
+            placeholder="write some Number here"
+          />
+
+          <br /><br />
+
+          <!-- Calculator result  -->
+
+          <label for="result"></label>
+          <input
+            disabled
+            type="text"
+            id="result"
+            name="result"
+            placeholder="here's your result"
+          />
+        </div>
+
+        <!-- reset btn -->
+
+        <br />
+        <div class="btn">
+          <input type="reset" />
+
+          <br />
+          <hr />
+
+          <!-- sum, sub, mul, div 'btn'            -->
+
+          <input
+            type="button"
+            id="btn"
+            value="sum"
+            onclick="calculator('sum')"
+          />
+          <input
+            type="button"
+            id="btn"
+            value="sub"
+            onclick="calculator('sub')"
+          />
+          <input
+            type="button"
+            id="btn"
+            value="mul"
+            onclick="calculator('mul')"
+          />
+          <input
+            type="button"
+            id="btn"
+            value="div"
+            onclick="calculator('div')"
+          />
+          <br /><br />
+
+          <!-- darkmode button -->
+
+          <input
+            type="button"
+            onclick="darkmode('click2')"
+            value="DARK MODE"
+            class="btn"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
