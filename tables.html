@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tables.css" />
+    <script src="tables.js" defer></script>
+    <title>Table genrator</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend><h1 id="table_heading">Tables:</h1></legend>
+
+      <span>search any table:</span><br /><br />
+
+      <input type="text" id="input" placeholder="search table..." required />
+      <label for="input">Add num</label>
+
+      <button onclick="table('click()')">Go</button>
+      <button onclick="del()">Clear</button>
+      <hr />
+      <main id="main">
+        <div id="div"></div>
+      </main>
+      <hr />
+      <span id="span">&COPY;mohsin khan</span>
+    </fieldset>
+  </body>
+</html>

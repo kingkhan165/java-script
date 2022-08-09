@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Snippet&display=swap");
+* {
+  font-family: "Snippet", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+  text-align: center;
+}
+
+fieldset {
+  position: relative;
+  border: 1px solid black;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.644);
+  border-radius: 3px;
+}
+
+legend {
+  background-color: white;
+  color: black;
+  text-align: start;
+  font-size: 14px;
+}
+
+.floating_input {
+  background-color: aquamarine;
+  width: 230px;
+  height: 30px;
+}
+
+input {
+  position: relative;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 6px;
+}
+input:focus {
+  box-shadow: 0 0 2px black;
+}
+
+input:focus::placeholder {
+  opacity: 1;
+}
+
+input::placeholder {
+  opacity: 0;
+}
+
+label {
+  position: absolute;
+  left: 12px;
+  padding: 5px;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translate(-5%, -85%);
+}
+
+@media screen and (max-width: 197px) {
+  label {
+    position: absolute;
+    top: 42px;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2.5px;
+  color: black;
+  padding: 6px;
+}
+button:hover {
+  box-shadow: 0 0 2px black;
+}
+
+#div h4 {
+  margin: 5px;
+  word-spacing: 10px;
+}
+
+body,
+#div h4 {
+  animation: myAnim 3s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  color: red;
+  animation: blinkAnim 3s ease infinite normal forwards;
+}
+@keyframes blinkAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+hr {
+  box-shadow: 0.5px 0.5px 0.5px black;
+}
