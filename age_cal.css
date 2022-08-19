@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(to right, pink, skyblue);
+  font-family: "Comfortaa", cursive;
+}
+
+.contanier {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 0 8px black;
+  padding: 5%;
+  display: none;
+  /* width: 90%; */
+}
+
+h1 {
+  /* background-color: black; */
+
+  text-align: center;
+  margin-bottom: 40px;
+  cursor: default;
+  transition: 0.8s ease;
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h1:hover {
+  text-shadow: 0 0 8px #2196f3;
+}
+
+.main {
+  /* background-color: black; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+
+.input {
+  position: relative;
+  width: 150px;
+  height: 32px;
+}
+
+.input input {
+  position: absolute;
+  right: 2px;
+  width: 100%;
+  padding: 4%;
+  border: none;
+  background-color: whitesmoke;
+  border-bottom: 1px solid black;
+  border-radius: 2px;
+  outline: none;
+}
+
+.input label {
+  position: absolute;
+  bottom: 4px;
+  padding-bottom: 4%;
+  color: black;
+  font-size: 14px;
+  transition: 0.8s ease;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label {
+  transform: translateY(-32px);
+  font-size: 16px;
+}
+
+.input input:focus {
+}
+
+#show_age {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn,
+span {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn .submit {
+  width: 40%;
+  padding: 2%;
+  background-color: #2196f3;
+  border: 1px solid #006dbb;
+  box-shadow: 0px 0px 4px #2196f3;
+  color: whitesmoke;
+  border-radius: 3px;
+  outline: none;
+}
+
+.btn .submit:hover {
+  box-shadow: none;
+}
+
+.tracker {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  animation: track 2000ms infinite;
+  transition: all 0.15s;
+}
+@keyframes track {
+  0%,
+  100% {
+    border-radius: 50%;
+    transform: rotate(0deg);
+    background-color: pink;
+    border: 1px solid palevioletred;
+    box-shadow: 0px 0px 4px palevioletred;
+  }
+  50% {
+    border: 0%;
+    transform: rotate(180deg);
+    background-color: lightblue;
+    border: 1px solid #006dbb;
+    box-shadow: 0px 0px 4px #2196f3;
+  }
+}
+
+#spinner {
+  width: 100px;
+  height: 100px;
+  animation: spin 2000ms infinite;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+}
+@keyframes spin {
+  0%,
+  100% {
+    border-radius: 50%;
+    transform: rotate(0deg);
+    background-color: pink;
+    border: 1px solid palevioletred;
+    box-shadow: 0px 0px 4px palevioletred;
+  }
+  50% {
+    border: 0%;
+    transform: rotate(1180deg);
+    background-color: lightblue;
+    border: 1px solid #006dbb;
+    box-shadow: 0px 0px 4px #2196f3;
+  }
+}

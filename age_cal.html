@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="age_cal.css" />
+    <script src="age_cal.js" defer></script>
+    <title>Age_calculator</title>
+  </head>
+  <body onload="myFunction()">
+    <div id="spinner"></div>
+    <div class="contanier" id="con">
+      <div class="tracker"></div>
+      <h1>AgeCalculator</h1>
+      <div class="main">
+        <div class="input one">
+          <input type="number" id="day" required />
+          <label for="day">Day</label>
+        </div>
+        <div class="input two">
+          <input type="number" id="month" required />
+          <label for="Month">Month</label>
+        </div>
+        <div class="input three">
+          <input type="number" id="year" required />
+          <label for="year">Year</label>
+        </div>
+      </div>
+      <div id="show_age"></div>
+      <div class="btn">
+        <button class="submit" onclick="ageCal()">Check</button>
+      </div>
+      <br />
+      <span style="text-align: center">&COPY;mohsin khan</span>
+    </div>
+  </body>
+</html>
